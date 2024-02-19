@@ -1,7 +1,6 @@
 package dao;
 
 
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 @Repository("dao2") //creation d'un bean: un object: Idao dao2 = new DaoImpl()

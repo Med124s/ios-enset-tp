@@ -1,6 +1,6 @@
 package pres;
 
-import metier.Imetier;
+import metier.IMetier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -11,12 +11,8 @@ public class PresWithSpringXml {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
-
-        //Imetier metier = (Imetier) context.getBean("metier");// return Object
-        Imetier metier = context.getBean(Imetier.class);// return Un Object qui implement cette interface, s'il trouve plusieur, il return exception
-
-
+        //IMetier metier = (IMetier) context.getBean("metier");// return Object
+        IMetier metier = context.getBean(IMetier.class);// return Un Object qui implement cette interface, s'il trouve plusieur, il return exception
         System.out.println(metier.calcule());
-
     }
 }

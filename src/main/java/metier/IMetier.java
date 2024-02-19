@@ -3,6 +3,6 @@ package metier;
 /**
  * @author med20
  **/
-public interface Imetier {
+public interface IMetier {
     double calcule();
 }
